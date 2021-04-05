@@ -1,11 +1,12 @@
 import React from 'react';
+import MenuAppBar from '../../components/Navbar/navbar'
 
 export default function Home(){
     return(
         <div>
-            <h2>Você está na Home</h2>
+            <MenuAppBar/>
             <ul>
-                <li><a href='/splash'>Ir para Splash screen</a></li>
+                <li><a href="splash">Ir para Splash screen</a></li>
             </ul>
         </div>
     );
