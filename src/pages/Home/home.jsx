@@ -1,5 +1,6 @@
 import React from 'react';
-import MenuAppBar from '../../components/Navbar/navbar'
+import MenuAppBar from '../../components/Navbar/navbar';
+import Listas from '../../components/Lista/lista';
 
 export default function Home(){
     return(
