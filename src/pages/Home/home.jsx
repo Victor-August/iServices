@@ -6,9 +6,13 @@ export default function Home(){
     return(
         <div>
             <MenuAppBar/>
-            <ul>
-                <li><a href="splash">Ir para Splash screen</a></li>
-            </ul>
+            <div style={{textAlign: 'center', paddingTop: '15vh'}}>
+                <h1>iServices</h1>
+                <h4>Home</h4>
+                    <p>
+                        <a href='/splash'>Voltar para Splash</a>
+                    </p>
+            </div>
         </div>
     );
 };

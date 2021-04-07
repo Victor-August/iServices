@@ -12,9 +12,6 @@ import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
-import clsx from 'clsx';
-
-
 import Lista from '../Lista/lista';
 
 const useStyles = makeStyles((theme) => ({
@@ -49,22 +46,9 @@ export default function MenuAppBar(props) {
   };
 
   return (
-    <div>
-      <AppBar position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}>
-
+    <div className={classes.root}>
+      <AppBar position="static">
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <MenuIcon>
               </MenuIcon>
@@ -81,7 +65,6 @@ export default function MenuAppBar(props) {
             </FormGroup>
 
           {auth && (
-            
             <div>
                 <IconButton
                     aria-label="account of current user"
