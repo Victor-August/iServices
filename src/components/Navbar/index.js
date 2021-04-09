@@ -2,31 +2,32 @@ import React from 'react';
 import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">iServices</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={ toggle }>
                         <FaBars />
                     </MobileIcon>
+
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">Sobre</NavLinks>
+                            <NavLinks to="sobre">Sobre</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover">Pesquise</NavLinks>
+                            <NavLinks to="pesquise">Pesquise</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services">Serviços</NavLinks>
+                            <NavLinks to="servicos">Serviços</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="signup">Cadastre-se</NavLinks>
+                            <NavLinks to="cadastrar">Cadastre-se</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/signin">Entrar</NavBtnLink>
+                        <NavBtnLink to="/login">Entrar</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
