@@ -54,7 +54,7 @@ export const SidebarMenu = styled.ul`
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6, 60px);
     }
-`
+`;
 
 export const SidebarLink = styled(LinkS)`
     display: flex;
@@ -72,12 +72,12 @@ export const SidebarLink = styled(LinkS)`
         color: #01bf71;
         transition: 0.2s ease-in-out;
     }
-    `
+`;
 
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
-`
+`;
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
@@ -97,4 +97,4 @@ export const SidebarRoute = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
-`
+`;
