@@ -1,6 +1,6 @@
 import React from 'react';
-import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
+import { FaBars } from 'react-icons/fa'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
     return (
@@ -8,16 +8,13 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">iServices</NavLogo>
-                    <MobileIcon onClick={ toggle }>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
 
                     <NavMenu>
                         <NavItem>
                             <NavLinks to="sobre">Sobre</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="pesquise">Pesquise</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="servicos">Serviços</NavLinks>
