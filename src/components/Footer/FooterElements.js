@@ -66,26 +66,48 @@ export const FooterLink = styled(Link)`
     }
 `;
 
-export const SocialMedia = styled.div`
-
+export const SocialMedia = styled.section`
+    max-width: 1000px;
+    width: 100px;
 `;
 
 export const SocialMediaWrap  = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
 
+    @media screen and (max-width: 820px){
+        flex-direction: column;
+    }
 `;
-export const SocialLogo = styled.p`
-
+export const SocialLogo = styled(Link)`
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: bold;
 `;
-export const WebsiteRights = styled.p`
-
+export const WebsiteRights = styled.small`
+    color: #fff;
+    margin-bottom: 16px;
 `;
 
 export const SocialIcons = styled.div`
-
+    display: flex;
+    justify-content: space-between;
+    align-items: cener;
+    width: 240px;
 `;
 
-export const SocialIconLink = styled.img`
-
+export const SocialIconLink = styled.a`
+    color: #fff;
+    font-size: 24px;
 `;
 
 export const FaFacebook = styled.p`
@@ -98,4 +120,7 @@ export const FaYoutube = styled.p`
 `;
 
 export const FaTwitter = styled.p`
+`;
+
+export const FaLinkedin = styled.p`
 `;
