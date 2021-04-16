@@ -68,7 +68,7 @@ export const FooterLink = styled(Link)`
 
 export const SocialMedia = styled.section`
     max-width: 1000px;
-    width: 100px;
+    width: 100%;
 `;
 
 export const SocialMediaWrap  = styled.div`
@@ -101,26 +101,11 @@ export const WebsiteRights = styled.small`
 export const SocialIcons = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: cener;
+    align-items: center;
     width: 240px;
 `;
 
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
-`;
-
-export const FaFacebook = styled.p`
-`;
-
-export const FaInstagram = styled.p`
-`;
-
-export const FaYoutube = styled.p`
-`;
-
-export const FaTwitter = styled.p`
-`;
-
-export const FaLinkedin = styled.p`
 `;

@@ -11,7 +11,7 @@ const HeroSection = () => {
     }
 
     return (
-        <HeroContainer>
+        <HeroContainer id='home'>
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} picture-in-picture="off" type='video/mp4' />
             </HeroBg>
@@ -19,10 +19,16 @@ const HeroSection = () => {
                 <HeroH1>Com iServices você tem rapidez e agilidade!</HeroH1>
                 <HeroP>Cadastre se e encontre um prestador de serviços agora mesmo!</HeroP>
                 <HeroBtnWrapper>
-                    <Button to="cadastrar" onMouseEnter={onHover}
+                    <Button to="cadastrar" 
+                        onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
                         dark="true"
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}
                     >
                         Comece agora {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>

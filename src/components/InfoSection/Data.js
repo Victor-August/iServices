@@ -57,7 +57,7 @@ export const homeObjFour = {
     topLine: 'Segurança',
     headLine: 'Encontre o que precisa!',
     description: 'Crie uma conta e disponibilize já o seu serviço!',
-    buttonLabel: 'Comece agora',
+    buttonLabel: 'Cadastre-se',
     imgStart: false,
     img: require('../../images/svg-3.svg').default,
     alt: 'servico',
