@@ -1,6 +1,6 @@
 import React from 'react'
-import { 
-    Container, 
+import {
+    Container,
     FormWrap,
     Icon,
     FormContent,
@@ -20,17 +20,17 @@ const SignIn = () => {
                     <Icon to='/'>iServices</Icon>
                     <FormContent>
                         <Form action="#">
-                            <FormH1>Sign in to your account</FormH1>
+                            <FormH1>Acesse com sua conta</FormH1>
                             <FormLabel htmlFor='for'>Email</FormLabel>
-                            <FormInput type='email' required/>
-                            <FormLabel htmlFor='for'>Password</FormLabel>
-                            <FormInput type='password' required/>
-                            <FormButton type='submit' to='/search'>Continue</FormButton>
-                            <Text>Forgot password</Text>
+                            <FormInput type='email' required />
+                            <FormLabel htmlFor='for'>Senha</FormLabel>
+                            <FormInput type='password' required />
+                            <FormButton type='submit' to='/search'>Acesse</FormButton>
+                            <Text>Esqueci minha senha.</Text>
                         </Form>
                     </FormContent>
                 </FormWrap>
-            </Container>  
+            </Container>
         </>
     );
 }

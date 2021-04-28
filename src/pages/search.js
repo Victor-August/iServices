@@ -4,7 +4,8 @@ import Navbar from '../components/Navbar'
 const SearchPage = () => {
     return (
         <div>
-            <Navbar/>
+            <Navbar />
+
         </div>
     )
 }
