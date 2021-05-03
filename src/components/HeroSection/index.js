@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import Video from '../../videos/video.mp4';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
-import { Button } from '../ButtonElements'
+import { ButtonS } from '../ButtonElements'
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
@@ -16,22 +16,22 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} picture-in-picture="off" type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Com iServices você tem rapidez e agilidade!</HeroH1>
+                <HeroH1>Com iServices você tem facilidade, rapidez e segurança!</HeroH1>
                 <HeroP>Cadastre se e encontre um prestador de serviços agora mesmo!</HeroP>
                 <HeroBtnWrapper>
-                    <Button to="cadastrar" 
+                    <ButtonS to="cadastrar"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
                         dark="true"
-                        smooth={true} 
-                        duration={500} 
-                        spy={true} 
-                        exact='true' 
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
                         offset={-80}
                     >
                         Comece agora {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
+                    </ButtonS>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

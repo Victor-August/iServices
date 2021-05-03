@@ -53,7 +53,7 @@ const Navbar = ({ toggle }) => {
                                     offset={-80}
                                 >Descubra</NavLinks>
                             </NavItem>
-                            <NavItem>
+                            {/*<NavItem>
                                 <NavLinks to="servicos"
                                     smooth={true}
                                     duration={500}
@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
                                     exact='true'
                                     offset={-80}
                                 >Serviços</NavLinks>
-                            </NavItem>
+                            </NavItem>*/}
                             <NavItem>
                                 <NavLinks to="cadastrar"
                                     smooth={true}

@@ -9,13 +9,21 @@ import {
     FormLabel,
     FormInput,
     FormButton,
-    Text
+    Text,
+    HeroBg,
+    VideoBg
 } from './SiginElements'
+
+import Video from '../../videos/video.mp4';
 
 const SignIn = () => {
     return (
         <>
             <Container>
+                <HeroBg>
+                    <VideoBg autoPlay loop muted src={Video}
+                        picture-in-picture="off" type='video/mp4' />
+                </HeroBg>
                 <FormWrap>
                     <Icon to='/'>iServices</Icon>
                     <FormContent>

@@ -1,8 +1,8 @@
 export const homeObjOne = {
     id: 'sobre',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    //lightText: false,
+    //lightTextDesc: false,
     topLine: 'Facilidade',
     headLine: 'iServices',
     description: 'É uma plataforma onde você encontra os serviços prestados próximo a sua necessidade e lhe permite ser um prestador de serviços ao mesmo tempo!',
@@ -10,13 +10,14 @@ export const homeObjOne = {
     imgStart: false,
     img: require('../../images/svg-2.svg').default,
     alt: 'servico',
-    dark: true,
+    //dark: false,
     //primary: true,
-    darkText: false
+    darkText: true
 }
 
 export const homeObjTwo = {
     id: 'descubra',
+    buttonlink: '/search',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -33,6 +34,24 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
+    id: 'cadastrar',
+    buttonlink: '/userRegister',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Segurança',
+    headLine: 'Encontre o que precisa!',
+    description: 'Crie uma conta e disponibilize já o seu serviço!',
+    buttonLabel: 'Cadastre-se',
+    imgStart: false,
+    img: require('../../images/svg-3.svg').default,
+    alt: 'servico',
+    dark: false,
+    primary: false,
+    darkText: true
+}
+
+/*export const homeObjFour = {
     id: 'servicos',
     lightBg: true,
     lightText: false,
@@ -47,21 +66,4 @@ export const homeObjThree = {
     dark: false,
     primary: false,
     darkText: true
-}
-
-export const homeObjFour = {
-    id: 'cadastrar',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Segurança',
-    headLine: 'Encontre o que precisa!',
-    description: 'Crie uma conta e disponibilize já o seu serviço!',
-    buttonLabel: 'Cadastre-se',
-    imgStart: false,
-    img: require('../../images/svg-3.svg').default,
-    alt: 'servico',
-    dark: true,
-    primary: true,
-    darkText: false
-}
+}*/

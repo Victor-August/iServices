@@ -1,11 +1,13 @@
 import { React, useState } from 'react'
+import ScrollToTop from '../components/ScrollToTop'
+import CadForm from '../components/Form'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
-import Services from '../components/Services/index'
 import Footer from '../components/Footer'
-import ScrollToTop from '../components/ScrollToTop'
 
-const SearchPage = () => {
+
+
+const UserRegisterPage = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -13,15 +15,16 @@ const SearchPage = () => {
         setIsOpen(!isOpen)
     }
 
+
     return (
-        <div>
+        <>
             <ScrollToTop />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <Services />
+            <CadForm />
             <Footer />
-        </div>
+        </>
     )
 }
 
-export default SearchPage
+export default UserRegisterPage

@@ -7,20 +7,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 0 30px;
     height: 1000px;
-    position: relative;    
-    /*min-height: 692px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    overflow: hidden;
-    background: linear-gradient(
-        108deg,
-        rgba(1, 147, 86, 1) 0%,
-        rgba(10, 201, 122, 1) 100%
-    );*/
+    position: relative;
 `;
 
 export const HeroBg = styled.div`
@@ -53,28 +40,16 @@ export const FormWrap = styled.div`
     }
 `;
 
-export const Icon = styled(Link)`
-    margin-left: 32px;
-    margin-top: 32px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-    font-size: 32px;
-
-    @media screen and (max-width: 480px){
-        margin-left: 16px;
-        margin-top: 8px;
-    }
-`;
-
 export const FormContent = styled.div`
     height: 100%;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @media screen and (max-width: 480px){
         padding: 10px;
+        padding-top: 40px;
     }
 `;
 
@@ -86,7 +61,7 @@ export const Form = styled.form`
     z-index: 1;
     display: grid;
     margin: 0 auto;
-    padding: 80px 32px;
+    padding: 50px 32px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -110,7 +85,7 @@ export const FormLabel = styled.label`
 `;
 
 export const FormInput = styled.input`
-    height: 45px;
+    height: 42px;
     padding: 16px 16px;
     margin-bottom: 32px;
     border: none;
@@ -123,7 +98,7 @@ export const FormButton = styled.button`
     border: none;
     border-radius: 4px;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
@@ -136,7 +111,24 @@ export const FormButton = styled.button`
 
 export const Text = styled.span`
     text-align: center;
-    margin-top: 24px;
+    margin-bottom: 24px;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
+`;
+
+export const CheckBoxContainer = styled.div`
+ margin-bottom: 25px;
+`;
+
+export const Label = styled.label`
+    color: #fff;
+    padding-left: 22px;
+    font-size: 15px;
+`;
+
+export const FormCheckBox = styled.input`
+    cursor: pointer;
+    width: 22px;
+    height: 22px; 
+    vertical-align: middle;
 `;
