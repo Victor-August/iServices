@@ -72,9 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Bibliotecas instaladas:
 
-Material-Ui
-npm install @material-ui/core
-npm install @material-ui/icons
 
 <!-- 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
