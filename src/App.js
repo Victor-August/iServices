@@ -5,6 +5,7 @@ import Home from './pages';
 import SigninPage from './pages/signin';
 import SearchPage from './pages/search';
 import UserRegisterPage from './pages/userRegister';
+import HomePage from './pages/Registry/index';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path='/signin' component={SigninPage} exact />
                 <Route path='/search' component={SearchPage} exact />
                 <Route path='/userRegister' component={UserRegisterPage} exact />
+                <Route path='/homePage' component={HomePage} exact />
             </Switch>
         </Router>
     )

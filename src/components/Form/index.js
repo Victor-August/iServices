@@ -30,7 +30,7 @@ const CadForm = () => {
 
                 <FormWrap>
                     <FormContent>
-                        <Form action="#">
+                        <Form action="/signin">
                             <FormH1>Faça seu cadastro!</FormH1>
 
                             <FormLabel htmlFor='for'>Nome</FormLabel>

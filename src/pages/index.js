@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
-import { homeObjOne, homeObjTwo, homeObjThree} from '../components/InfoSection/Data'
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
 import Footer from '../components/Footer/index'
 
 const Home = () => {

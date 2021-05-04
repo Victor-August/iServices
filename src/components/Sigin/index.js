@@ -27,13 +27,13 @@ const SignIn = () => {
                 <FormWrap>
                     <Icon to='/'>iServices</Icon>
                     <FormContent>
-                        <Form action="#">
+                        <Form action="/homePage">
                             <FormH1>Acesse com sua conta</FormH1>
                             <FormLabel htmlFor='for'>Email</FormLabel>
                             <FormInput type='email' required />
                             <FormLabel htmlFor='for'>Senha</FormLabel>
                             <FormInput type='password' required />
-                            <FormButton type='submit' to='/search'>Acesse</FormButton>
+                            <FormButton type='submit' to='/homePage'>Acesse</FormButton>
                             <Text>Esqueci minha senha.</Text>
                         </Form>
                     </FormContent>
