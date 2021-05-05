@@ -1,11 +1,12 @@
 import React from 'react'
+import UserNav from '../../components/Navbar/userNav'
 
 const homePage = () => {
     return (
-        <div>
-            <h2> Home do usuário após login </h2>
-        </div>
+        <>
+            <UserNav />
+        </>
     )
 }
 
-export default homePage
+export default homePage;
